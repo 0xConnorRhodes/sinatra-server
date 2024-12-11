@@ -10,7 +10,10 @@ RUN apk add --no-cache \
 
 # RUN gem update --system
 
-RUN gem install sinatra
+RUN gem install \
+    sinatra \
+    rackup
+
 # RUN gem install \
 #     sinatra \
 #     rackup \
